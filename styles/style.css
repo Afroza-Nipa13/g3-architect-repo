@@ -16,20 +16,17 @@
     font-size: 4rem;
   }
 
-  *{
-    margin: 0;
-    padding: 0;
-  }
+ 
 /* shared styles */
 
 .btn-primary{
     width: 180px;
     height: 64px;
-    background-color: orange;
+    background-color:orange;
     color: white;
-    font-size: 20px;
-    font-weight: 400;
-    padding: 20px 21px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 23px;
     border: none;
     border-radius: 5px;
 }
@@ -38,8 +35,13 @@
     display: flex;
 }
 
-.dark2-font{
+.dark2{
         color: rgb(160, 158, 158);
+}
+
+.dark3{
+    color: rgb(41, 40, 40);
+
 }
 
 .orange-font{
@@ -47,17 +49,20 @@
 }
 
 .secondery-bg{
-    background-color: rgb(247, 231, 220);
+    padding: 50px 100px;
+    background-color:rgb(255, 144, 14, 10%);
 }
  .text-gray{
-    color: rgb(41, 40, 40);
+    color: rgb(133, 125, 125);
     ;
 
  }
 
   /* nav bar style */
    .nav-bar{
-    justify-content: space-between;
+    justify-content:space-between;
+    align-items: center;
+    /* text-align: center; */
    }
   .list-item{
     list-style:none;
@@ -66,20 +71,60 @@
 
  .link{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
-    color: rgb(41, 40, 40);
+    
 
   }
 
   .logo{
-    font-size: 45px;
+    font-size: 2.8rem;
     font-weight: 700;
   }
 
-  .nav-bar .banner{
+  .banner{
     max-width: 1440px;
+    text-align: center;
     margin:0 auto;
-  }
     
+  }
+
+  .banner-content{
+    max-width: 862px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  /* .banner{ */
+   
+   .banner-title{
+                font-family: "Work Sans", serif;
+                font-optical-sizing: auto;
+                font-weight: 700px;
+                font-style: normal;
+                font-size: 4rem;
+           }
+   .banner-description{
+                    font-family: "Work Sans", serif;
+                    font-optical-sizing: auto;
+                    font-weight:400px;
+                    font-style: normal;
+                    font-size: 1rem;
+   }          
   
+    
+  .banner-img{
+     max-width: 100%;
+  }
+
+
+  @media screen and (max-width:576px) {
+                   
+                 .nav-bar, .nav-links{
+                    flex-direction: column;
+                    gap: 20px;
+
+                 }
+    
+  }
