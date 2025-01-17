@@ -1,16 +1,85 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .font-normal {
   font-family: "Work Sans", serif;
   font-optical-sizing: auto;
-  font-weight: auto;
+  font-weight:400px;
   font-style: normal;
 }
 
 .font-hero {
     font-family: "Work Sans", serif;
     font-optical-sizing: auto;
-    font-weight: auto;
+    font-weight: 700px;
     font-style: normal;
     font-size: 4rem;
   }
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+/* shared styles */
+
+.btn-primary{
+    width: 180px;
+    height: 64px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 20px 21px;
+    border: none;
+    border-radius: 5px;
+}
+
+.display-flex{
+    display: flex;
+}
+
+.dark2-font{
+        color: rgb(160, 158, 158);
+}
+
+.orange-font{
+    color:orange;
+}
+
+.secondery-bg{
+    background-color: rgb(247, 231, 220);
+}
+ .text-gray{
+    color: rgb(41, 40, 40);
+    ;
+
+ }
+
+  /* nav bar style */
+   .nav-bar{
+    justify-content: space-between;
+   }
+  .list-item{
+    list-style:none;
+    margin-right: 30px;
+  }  
+
+ .link{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(41, 40, 40);
+
+  }
+
+  .logo{
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  .nav-bar .banner{
+    max-width: 1440px;
+    margin:0 auto;
+  }
+    
+  
