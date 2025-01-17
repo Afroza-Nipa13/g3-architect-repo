@@ -30,13 +30,28 @@
     border: none;
     border-radius: 5px;
 }
+main{
+    max-width: 1440px;
+    margin:0 auto;
+}
 
+main > section{
+    margin-top: 130px;
+}
 .display-flex{
     display: flex;
 }
 
-.dark2{
-        color: rgb(160, 158, 158);
+.unique-font{
+        color: rgb(133, 129, 129);
+        font-size: 1.8rem;
+        font-weight:500;
+}
+
+.black-font{
+    color:rgb(3, 3, 3);
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .dark3{
@@ -46,6 +61,8 @@
 
 .orange-font{
     color:orange;
+    font-size: 1.8rem;
+    font-weight: bold;
 }
 
 .secondery-bg{
@@ -118,7 +135,44 @@
      max-width: 100%;
   }
 
+ /* Our Feature section styles */
 
+  .img-container{
+           display: grid;
+           grid-template-columns: repeat(2, 1fr);
+           gap: 30px;
+
+  }
+ .Features{
+       align-items: center;
+ }
+
+ .text-container{
+        max-width: 530px;
+        margin-left: 50px;
+
+ }
+
+  /* About Section starts */
+
+.about{
+    width: 1440px;
+    display: flex;
+    
+}
+.about-container{
+      /* max-width: 580px; */
+}
+
+
+.architect-img{
+    max-width:100%;
+}
+.about-title{
+    border-left: 5px solid orange;
+    padding-left: 10px;
+}
+/* small device */
   @media screen and (max-width:576px) {
                    
                  .nav-bar, .nav-links{
@@ -126,5 +180,37 @@
                     gap: 20px;
 
                  }
-    
+                 .Features{
+                    flex-direction: column-reverse;
+                 }
+                 .img-container{
+                    grid-template-columns: repeat(1, 1fr);
+                 }
+
+                 .text-container{
+                    text-align: center;
+                    margin-bottom: 50px;
+                 }
+                
   }
+
+  /* medium device */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+                  
+                      .nav-bar, .nav-links{
+                                flex-direction: column;
+                                gap: 20px;}
+    
+                  .Features{
+                        flex-direction: column-reverse;
+                  }
+                  .img-container{
+                    grid-template-columns: repeat(2, 1fr);
+                 }
+
+                 .text-container{
+                    text-align: center;
+                    margin-bottom: 50px;
+                 }
+}
