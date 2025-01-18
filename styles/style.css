@@ -30,6 +30,21 @@
     border: none;
     border-radius: 5px;
 }
+
+.btn-Unique{
+    width: 342px;
+    height: 200px;
+    background-color:orange;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 23px;
+    border: none;
+    border-radius: 10px;
+}
+.years{
+    font-size:4rem;
+}
 main{
     max-width: 1440px;
     margin:0 auto;
@@ -161,7 +176,7 @@ main > section{
     
 }
 .about-container{
-      /* max-width: 580px; */
+      
 }
 
 
@@ -172,6 +187,57 @@ main > section{
     border-left: 5px solid orange;
     padding-left: 10px;
 }
+
+   
+
+.item{
+     padding:30px;
+     border: 1px solid teal;
+     border-radius: 15px;
+     margin-bottom: 20px;
+     box-shadow: 0px 6px 30px 0px , rgba(0, 0, 0, 0.06%);
+    }
+     
+   
+    .card-container{
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     
+      
+   } 
+    .card {
+      max-width: 240px;
+      height: 240px;
+      border: 1px solid orange;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+       
+    } 
+    
+    .card-number{
+       font-size: 2.8rem;
+       color:rgb(48, 46, 46);
+       font-weight: 600;
+       margin-top: 10px;
+       margin-bottom: 5px;
+
+    }
+    .card-name{
+      font-size: 1.2rem;
+      font-weight: 500;
+      color:gray;
+      margin-top:10px;
+    }
+
+    .fact-description{
+       max-width: 537px;
+       margin-bottom: 50px;
+    }
+
+
 /* small device */
   @media screen and (max-width:576px) {
                    
@@ -213,4 +279,5 @@ main > section{
                     text-align: center;
                     margin-bottom: 50px;
                  }
+
 }
