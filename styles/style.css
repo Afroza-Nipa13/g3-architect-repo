@@ -170,9 +170,8 @@ main > section{
 
   /* About Section starts */
 
-.about{
-    width: 1440px;
-    display: flex;
+.About{
+   gap: 100px;
     
 }
 .about-container{
@@ -181,7 +180,7 @@ main > section{
 
 
 .architect-img{
-    max-width:100%;
+    
 }
 .about-title{
     border-left: 5px solid orange;
@@ -189,15 +188,18 @@ main > section{
     font-size: 2.8rem;
 }
 
-   
+.item-card{
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 30px 0 rgba(0, 0, 0, .06);
+      margin-bottom: 20px;
+}   
 
-.item{
-     padding:30px;
-     border: 1px solid teal;
-     border-radius: 15px;
-     margin-bottom: 20px;
-     box-shadow: 0px 6px 30px 0px , rgba(0, 0, 0, 0.06%);
-    }
+.item-card  .card-title{
+   font-weight: 600;
+   font-size: 1.25rem;
+   
+}
      
    /* fact section style */
     .card-container{
